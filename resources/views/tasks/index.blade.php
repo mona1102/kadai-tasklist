@@ -24,7 +24,7 @@
         </table>
     @endif
     
-    {{ $tasks->links('pagination::bootstrap-4') }}
+    {{ $tasks->links('pagination::bootstrap-4') }}　
     
     {!! link_to_route('tasks.create', '新規タスクの追加', [], ['class' => 'btn btn-success']) !!}
     
