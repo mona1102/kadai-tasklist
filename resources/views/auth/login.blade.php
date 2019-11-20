@@ -14,8 +14,8 @@
                {!! Form::text('email', old('email'), ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
-               {!! Form::label('password', 'パスワード') !!}
-               {!! Form::text('password', ['class' => 'form-control']) !!}
+               {!! Form::label('password', 'Password') !!}
+               {!! Form::password('password', [], ['class' => 'form-control']) !!}
             </div>
             
             {!! Form::submit('Log in', ['class' => 'btn btn-primary btn-block']) !!}

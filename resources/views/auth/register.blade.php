@@ -10,7 +10,7 @@
          
          {!! Form::open(['route' => 'signup.post']) !!}
             <div class="form-group">
-               {!! Form::label('name', '名前') !!}
+               {!! Form::label('name', 'Name') !!}
                {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
@@ -18,12 +18,12 @@
                {!! Form::text('email', old('email'), ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
-               {!! Form::label('password', 'パスワード') !!}
-               {!! Form::text('password', ['class' => 'form-control']) !!}
+               {!! Form::label('password', 'Password') !!}
+               {!! Form::password('password', [], ['class' => 'form-control']) !!}
             </div>
             <div class="form-group">
-               {!! Form::label('password_confirmation', 'パスワード(確認用)') !!}
-               {!! Form::text('password_confirmation', ['class' => 'form-control']) !!}
+               {!! Form::label('password_confirmation', 'Confirmation') !!}
+               {!! Form::password('password_confirmation', [], ['class' => 'form-control']) !!}
             </div>
             
             {!! Form::submit('Sign up', ['class' => 'btn btn-primary btn-block']) !!}
