@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-
-    <h1>タスク一覧</h1>
+    <div class="mb-4">
+        <h1>{{ $user->name }}さんのタスク一覧</h1>
+    </div>
     @if (count($tasks) > 0)
         <table class="table table-striped">
             <thead>
